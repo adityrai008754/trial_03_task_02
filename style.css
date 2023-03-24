@@ -267,7 +267,7 @@ h1 {
     color: brown;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    background: linear-gradient(white,rgb(167, 226, 94));
+    background: linear-gradient(white,#bbd4be);
     border-radius: 50% 20% / 10% 40%;
     /* background-color: rgb(157, 250, 144); */
   }
