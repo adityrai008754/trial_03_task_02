@@ -182,7 +182,7 @@ h1 {
 #about {
     margin: 1rem;
     padding:3rem 9%;
-    background: linear-gradient(white,rgb(167, 226, 94));
+    background: linear-gradient(white,#bbd4be);
     border-radius: 50% 20% / 10% 40%;
   }
   #about .heading {
@@ -567,6 +567,108 @@ h1 {
     transform: ; */
 }
 
+#service {
+    width: 100%;
+    padding: 70px 0;
+    background:#efefef ;
+}
+.service-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#bbd4be);
+    opacity: 0;
+    /* z-index: -2; */
+}
+
+.single-service:hover .overlay {
+    opacity: 1;
+}
+.service-desc {
+width: 80%;
+position: absolute;
+bottom: 0%;
+left: 50%;
+opacity: 0;
+transform: translateX(-50%);
+transition: 1s;
+
+}
+hr {
+    background-color: #fff;
+    height:2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p {
+    font-size: 14px;
+}
+.single-service:hover .service-desc {
+bottom: 20%;
+opacity: 1;
+}
+.service-desc .service-btn{
+    margin-top: 10px;
+}
+.service-desc  .service-btn a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.service-desc  .service-btn a.brown {
+    color: white;
+    background-color: brown;
+    transition: 0.3s ease;
+}
+
+.service-desc  .service-btn a.brown:hover {
+    color: white;
+    background-color: green;
+}
+
+.service-desc  .service-btn a.pink {
+    color: white;
+    background-color: rgb(235, 90, 114);
+    transition: 0.3s ease;
+}
+
+.service-desc  .service-btn a.pink:hover {
+    color: white;
+    background-color: greenyellow;
+}
+
+
+
+
 
 @media(max-width:980px) {
     .navbar {
@@ -625,6 +727,20 @@ h1 {
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
+    }
+
+    .single-service {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p {
+        font-size: 12px;
+    }
+    hr {
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc {
+        bottom:25% ;
     }
 }
 
